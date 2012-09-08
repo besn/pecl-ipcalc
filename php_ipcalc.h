@@ -1,11 +1,17 @@
-#ifndef PHP_HELLO_H
-#define PHP_HELLO_H 1
-#define PHP_HELLO_WORLD_VERSION "1.0"
-#define PHP_HELLO_WORLD_EXTNAME "hello"
+#ifndef PHP_IPCALC_H
+#define PHP_IPCALC_H 1
+#define PHP_IPCALC_VERSION "1.0"
+#define PHP_IPCALC_EXTNAME "ipcalc"
 
-PHP_FUNCTION(hello_world);
+PHP_FUNCTION(ipcalc);
 
-extern zend_module_entry hello_module_entry;
-#define phpext_hello_ptr &hello_module_entry
+PHP_MINIT_FUNCTION(ipcalc);
+PHP_MSHUTDOWN_FUNCTION(ipcalc);
+PHP_RINIT_FUNCTION(ipcalc);
+PHP_RSHUTDOWN_FUNCTION(ipcalc);
+PHP_MINFO_FUNCTION(ipcalc);
 
-#endif
+extern zend_module_entry ipcalc_module_entry;
+#define phpext_ipcalc_ptr &ipcalc_module_entry
+
+#endif /* PHP_IPCALC_H */
