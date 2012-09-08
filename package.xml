@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>ipcalc</name>
+ <channel>pecl.php.net</channel>
+ <summary>ipcalc as a PECL extension</summary>
+ <description>This extension is a port of the ipcalc perl script.</description>
+ <lead>
+  <name>Andreas Mery</name>
+  <user>besn</user>
+  <email>besn@besn.at</email>
+  <active>yes</active>
+ </lead>
+ <date>2012-09-08</date>
+ <time>23:12:00</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license">PHP License</license>
+ <notes>
+1.0.0 Release:
+Initial release
+ </notes>
+ <contents>
+  <dir name="/">
+   <file md5sum="761278ba08b10af2008c721fca72f194" name="ipcalc.c" role="src" />
+   <file md5sum="5db8d3c35b5336b68fa69ebf1ad48209" name="config.m4" role="src" />
+   <file md5sum="1ce66644d3ab8904be260c3a0ef4bf15" name="php_ipcalc.h" role="src" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0b1</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <providesextension>ipcalc</providesextension>
+ <extsrcrelease />
+</package>
