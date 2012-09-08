@@ -1,0 +1,23 @@
+The IPCalc PHP Extension is a port of the perl script of the same name.
+
+See the README file in that package for installation instructions. Once
+it is installed you can compile the IPCalc PHP Extension. You'll need
+to make sure you have the PHP development packages installed first
+(if you have 'phpize' command you’re all set). You'll also probably
+want the PHP command line interface installed as well (usually named
+php-cli). After extracting the IPCalc PHP tarball, just run:
+
+phpize
+./configure
+make
+make install
+
+You then need to make PHP aware of the new extension by adding the
+following line to your php.ini:
+
+extension="ipcalc.so"
+
+You can then test if the modlue is configure correctly with the
+PHP cli:
+
+php -r 'print_r(ipcalc("192.168.1.1", 24));'
