@@ -10,10 +10,10 @@
   <email>besn@besn.at</email>
   <active>yes</active>
  </lead>
- <date>2012-09-08</date>
- <time>23:12:00</time>
+ <date>2012-09-12</date>
+ <time>22:05:00</time>
  <version>
-  <release>1.0.0</release>
+  <release>1.0.1</release>
   <api>1.0.0</api>
  </version>
  <stability>
@@ -22,12 +22,15 @@
  </stability>
  <license uri="http://www.php.net/license">PHP License</license>
  <notes>
+1.0.1 Update:
+Reformatting
+
 1.0.0 Release:
 Initial release
  </notes>
  <contents>
   <dir name="/">
-   <file md5sum="761278ba08b10af2008c721fca72f194" name="ipcalc.c" role="src" />
+   <file md5sum="2fbebfb18c957e7fee0264fb52581538" name="ipcalc.c" role="src" />
    <file md5sum="5db8d3c35b5336b68fa69ebf1ad48209" name="config.m4" role="src" />
    <file md5sum="1ce66644d3ab8904be260c3a0ef4bf15" name="php_ipcalc.h" role="src" />
   </dir>
